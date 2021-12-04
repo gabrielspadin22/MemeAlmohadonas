@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linea cheems</title>
+</head>
+<body>
+    <div class="grid__container">
+        <div id="grid-container-header" class="grid__container__header">   
+            <div class="icono header__desk__grid">
+                <i class="material-icons">menu</i>
+                <h1 class="nav__title"><a href="../index.html">MemeAlmohadonas?</a><img src="../images/memealmoha.png" width="300px" height="300px" alt=""></h1>
+                <div class="grid__container__header__search__desk">
+                    <form action="search.php" method="post" class="buscador">
+                        <label for="buscador__inputs"></label>
+                        <input class="buscador__inputs"placeholder="Buscá tu meme!" type="text" name="buscador" id="">
+                        <button class="buscador__inputs" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <nav class="nav">
+                    <h1 class="nav__title__responsive"><a href="../index.html">MemeAlmohadonas?</a><img src="../mages/memealmoha.png" width="100px" height="100px" alt=""></h1>
+                    <ul class="nav__ul">
+                        <li id="liLineas" class="nav__content nav__li">Línea
+                            <div class="nav__li__container">
+                                <a class="nav__content nav__li__container__lineas"href="linea.html">Cheems</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Pepe the frog</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Wojak</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Dank memes</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Custom memes</a>
+                            </div>
+                        </li>
+                        <li class="nav__li"><a class="nav__content" href="ofertas.html"><i class="material-icons">local_offer</i>Ofertas</a></li>
+                        <li class="nav__li"><a class="nav__content" href="trending.html"><i class="material-icons">trending_up</i>Trending</a></li>
+                        <li class="nav__li"><a class="nav__content" href="help.html"><i class="material-icons">help</i>Ayuda</a></li>
+                        <li class="nav__li"><a class="nav__content" href="account.html"><i class="material-icons">account_circle
+                        </i>Mi cuenta</a></li>
+                        <li class="nav__li"><a class="nav__content" href="cart.html"><i class="material-icons">shopping_cart</i>Carrito</a></li>
+                    </ul>
+                </nav>   
+            </div>  
+            <div class="grid__container__header__search">
+                <form action="search.php" method="post" class="buscador">
+                    <label for="buscador__inputs"></label>
+                    <input class="buscador__text buscador__inputs"placeholder="Buscá tu meme!" type="text" name="buscador" id="">
+                </form>
+            </div>
+        </div>
+        <div class="grid__container__content">
+            <h2>Linea Cheems</h2>
+                <form class="filter__list" action="filter.php" method="post">
+                    <label class="filter__color" for="ordenar">Ordenar por</label>
+                    <select class="filter__color" name="ordenar" id="">
+                        <option value="mas-relevancia">Mas relevantes</option>
+                        <option value="menor-precio">Menor precio</option>
+                        <option value="mayor-precio">Mayor precio</option>
+                    </select>
+                </form>
+            <div class="ofertas">
+                <div class="card">
+                    <div class="card__box">
+                        <img class="img__product"src="../images/no puede ser.png" alt="no puede ser">
+                        <div class="card__content card__content_data__container">
+                            <h3 class="card__content__data">Almohadon Cheems</h3>
+                            <p class="card__content__data">Almohadon cheems "No puede ser"</p>
+                            <small class="envio">Envio gratis</small>
+                            <h4 class="ofertas__new__price card__content__data">$900</h4>
+                            <form class="card__content__data"action="cart.php" method="post">
+                                <label for="add-to-cart-1"></label>
+                                <input class="card__content__data card__content__data addToCart"type="button" name="add-to-cart" id="" value="Añadir al carro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__box">
+                        <img class="img__product"src="../images/bonkcheems.png" alt="bonk">
+                        <div class="card__content card__content_data__container">
+                            <h3 class="card__content__data">Almohadon Cheems</h3>
+                            <p class="card__content__data">Almohadon cheems "Bonk"</p>
+                            <small class="envio">Envio gratis</small>
+                            <h4 class="ofertas__new__price card__content__data">$900</h4>
+                            <form class="card__content__data"action="cart.php" method="post">
+                                <label for="add-to-cart-1"></label>
+                                <input class="card__content__data card__content__data addToCart"type="button" name="add-to-cart" id="" value="Añadir al carro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__box">
+                        <img class="img__product" src="../images/guapa.png" alt="Para ti guapa">
+                        <div class="card__content card__content_data__container">
+                            <h3 class="card__content__data">Almohadon Cheems</h3>
+                            <p class="card__content__data">Almohadon cheems "Para ti guapa"</p>
+                            <small class="envio">Envio gratis</small>
+                            <h4 class="ofertas__new__price card__content__data">$900</h4>
+                            <form class="card__content__data"action="cart.php" method="post">
+                                <label for="add-to-cart-1"></label>
+                                <input class="card__content__data card__content__data addToCart"type="button" name="add-to-cart" id="" value="Añadir al carro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__box">
+                        <img class="img__product"src="../images/crycheems.png" alt="Sad">
+                        <div class="card__content card__content_data__container">
+                            <h3 class="card__content__data">Almohadon Cheems</h3>
+                            <p class="card__content__data">Almohadon cheems "Sad"</p>
+                            <small class="envio">Envio gratis</small>
+                            <h4 class="ofertas__new__price card__content__data">$900</h4>
+                            <form class="card__content__data"action="cart.php" method="post">
+                                <label for="add-to-cart-1"></label>
+                                <input class="card__content__data card__content__data addToCart"type="button" name="add-to-cart" id="" value="Añadir al carro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__box">
+                        <img class="img__product"src="../images/hipocresia.png" alt="La hipocresia">
+                        <div class="card__content card__content_data__container">
+                            <h3 class="card__content__data">Almohadon Cheems</h3>
+                            <p class="card__content__data">Almohadon cheems "La hipocresia"</p>
+                            <small class="envio">Envio gratis</small>
+                            <h4 class="ofertas__new__price card__content__data">$900</h4>
+                            <form class="card__content__data"action="cart.php" method="post">
+                                <label for="add-to-cart-1"></label>
+                                <input class="card__content__data card__content__data addToCart"type="button" name="add-to-cart" id="" value="Añadir al carro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__box">
+                        <img class="img__product"src="../images/hipotenusa.png" alt="La hipotenusa">
+                        <div class="card__content card__content_data__container">
+                            <h3 class="card__content__data">Almohadon Cheems</h3>
+                            <p class="card__content__data">Almohadon cheems "La hiputenusa"</p>
+                            <small class="envio">Envio gratis</small>
+                            <h4 class="ofertas__new__price card__content__data">$900</h4>
+                            <form class="card__content__data"action="cart.php" method="post">
+                                <label for="add-to-cart-1"></label>
+                                <input class="card__content__data card__content__data addToCart"type="button" name="add-to-cart" id="" value="Añadir al carro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid__container__footer">
+            <!--Redes sociales-->
+        <div class="grid__redes">
+            <p><a href="404.html"><img width="30px" height="30px"src="http://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" alt="Facebook"></a></p>
+                <p><a href="404.html"><img width="30px" height="30px" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="Instagram"></a></p>
+                <p><a href="404.html"><img width="30px" height="30px"src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png" alt="4abTrAKtx5NtClW4LoarpX0jvJOBOo1JilmtNlbcSuqi6HgrWFbtuSS4rfQPsdSSjTHFDITLSHEH7TwT5wdz2KIZf4kSpRwfar7E7V33iwD"></a></p>
+        </div>
+        <div class="grid__info">
+            <p><a href="about.html">Sobre nosotros</a></p>
+            <p><a href="contact.html">Contactanos</a></p>
+            <p><a href="legal.html">Legales</a></p>
+        </div>
+        <!--Copy-->
+        <div class="grid__copy">
+            <p>Copyright MemeAlmohadonas©2021</p>
+            <small>Todos los derechos e izquierdos reservados</small>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

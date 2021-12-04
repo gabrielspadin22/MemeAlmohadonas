@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+</head>
+<body>
+    <div class="grid__container">
+        <div id="grid-container-header" class="grid__container__header">   
+            <div class="icono header__desk__grid">
+                <i class="material-icons">menu</i>
+                <h1 class="nav__title"><a href="../index.html">MemeAlmohadonas?</a><img src="../images/memealmoha.png" width="300px" height="300px" alt=""></h1>
+                <div class="grid__container__header__search__desk">
+                    <form action="search.php" method="post" class="buscador">
+                        <label for="buscador__inputs"></label>
+                        <input class="buscador__inputs"placeholder="Buscá tu meme!" type="text" name="buscador" id="">
+                        <button class="buscador__inputs" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <nav class="nav">
+                    <h1 class="nav__title__responsive"><a href="../index.html">MemeAlmohadonas?</a><img src="../mages/memealmoha.png" width="100px" height="100px" alt=""></h1>
+                    <ul class="nav__ul">
+                        <li id="liLineas" class="nav__content nav__li">Línea
+                            <div class="nav__li__container">
+                                <a class="nav__content nav__li__container__lineas"href="linea.html">Cheems</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Pepe the frog</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Wojak</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Dank memes</a>
+                                <a class="nav__content nav__li__container__lineas"href="404.html">Custom memes</a>
+                            </div>
+                        </li>
+                        <li class="nav__li"><a class="nav__content" href="ofertas.html"><i class="material-icons">local_offer</i>Ofertas</a></li>
+                        <li class="nav__li"><a class="nav__content" href="trending.html"><i class="material-icons">trending_up</i>Trending</a></li>
+                        <li class="nav__li"><a class="nav__content" href="help.html"><i class="material-icons">help</i>Ayuda</a></li>
+                        <li class="nav__li"><a class="nav__content" href="account.html"><i class="material-icons">account_circle
+                        </i>Mi cuenta</a></li>
+                        <li class="nav__li"><a class="nav__content" href="cart.html"><i class="material-icons">shopping_cart</i>Carrito</a></li>
+                    </ul>
+                </nav>   
+            </div>  
+            <div class="grid__container__header__search">
+                <form action="search.php" method="post" class="buscador">
+                    <label for="buscador__inputs"></label>
+                    <input class="buscador__text buscador__inputs"placeholder="Buscá tu meme!" type="text" name="buscador" id="">
+                </form>
+            </div>
+        </div>
+        <div class="grid__container__content">
+            <div class="article__alert">
+                <table id="tabla__help">
+                    <th class="alert__help">
+                        <h4>¡¡ALERTA!!</h4>
+                        <p>Cuidado con las estafas y supuestos sorteos falsos</p>
+                        <ol class="ol__cont">
+                            <li>Nosotros nunca pediremos datos personales o bancarios</li>
+                            <li>Avise a nuestros medios de contacto sobre la situacion</li>
+                            <li>No entre en enlaces ajenos a nuestra pagina</li>
+                        </ol>
+                    </th>
+                </table>
+            </div>
+            <div class="articulo__help">
+                <h3 id="saludo__help">Hola! Mi nombre es Gabriel y estoy acá para ayudarte en lo que necesites!</h3>
+                <p id="indicacion__help">Por favor marcá la opcion que mas se acerque a tu necesidad</p>
+                <form class="form__help" action="help.php" method="post">
+                    <ul class="ul__help">
+                        <li>
+                            <input type="radio" name="forgot-pass" id="">
+                            <label class="input__help"for="forgot-pass">Olvide mi contraseña</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="atencion-cliente" id="">
+                            <label class="input__help"for="atencion-cliente">Atencion al cliente</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="duda_garantia" id="">
+                            <label class="input__help"for="duda_garantia">Garantía de mi compra</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="distribuidor" id="">
+                            <label class="input__help"for="distribuidor">Quiero ser distribuidor</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="duda_envio" id="">
+                            <label class="input__help"for="duda_envio">Dudas sobre el envío de mi producto</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="denunciar-producto" id="">
+                            <label class="input__help"for="denunciar-producto">Quiero denunciar un producto</label>
+                        </li>
+                    <!--Aca me gustaria hacer que al seleccionar otro se activara la opcion para escribir-->
+                        <li>
+                            <label class="input__help"for="otro">Otro</label>
+                            <input  placeholder="Escribe tu duda" type="text" name="otro" id="">
+                        </li>
+                        <label for="preguntar"></label>
+                        <input class="enviar-mensaje" type="submit" name="preguntar" id="enviar__consulta"> 
+                    <!------------------------------------------------------------------------------------>
+                    </ul> 
+                </form>
+                <img src="https://i.gifer.com/origin/eb/eb21a80c486ad0eaf673fe15c59deab3_w200.gif" class="gif__help"></img>
+            </div>
+        </div>
+        <div class="grid__container__footer">
+            <!--Redes sociales-->
+        <div class="grid__redes">
+            <p><a href="404.html"><img width="30px" height="30px"src="http://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" alt="Facebook"></a></p>
+                <p><a href="404.html"><img width="30px" height="30px" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="Instagram"></a></p>
+                <p><a href="404.html"><img width="30px" height="30px"src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png" alt="4abTrAKtx5NtClW4LoarpX0jvJOBOo1JilmtNlbcSuqi6HgrWFbtuSS4rfQPsdSSjTHFDITLSHEH7TwT5wdz2KIZf4kSpRwfar7E7V33iwD"></a></p>
+        </div>
+        <div class="grid__info">
+            <p><a href="about.html">Sobre nosotros</a></p>
+            <p><a href="contact.html">Contactanos</a></p>
+            <p><a href="legal.html">Legales</a></p>
+        </div>
+        <!--Copy-->
+        <div class="grid__copy">
+            <p>Copyright MemeAlmohadonas©2021</p>
+            <small>Todos los derechos e izquierdos reservados</small>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
