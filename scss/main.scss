@@ -14,6 +14,16 @@ $basic-moz-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.74);
     -webkit-box-shadow: $basic-webkit-box-shadow;
     -moz-box-shadow: $basic-moz-box-shadow;
 }
+.superbfocus:hover{
+    transition: all .5s;
+    z-index: 500;
+    box-shadow: 10px 10px 400px 200px rgba(0,0,0,1);
+    -webkit-box-shadow: 10px 10px 400px 200px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 400px 200px rgba(0,0,0,1);
+}
+.bi:hover{
+    fill: white;
+}
 .cube__container{
     pointer-events: none;
     z-index: 600;
@@ -171,7 +181,6 @@ $basic-moz-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.74);
 }
 .cart__container{
     background-color: rgb(197, 197, 255);
-    min-width: 316px;
     font-size: 1em;
 }
 .text__shadow{
@@ -328,7 +337,11 @@ $basic-moz-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.74);
     justify-content: center;
     pointer-events: none;
     z-index: 800;
-    @extend .header__desk;
+    background: $header-bg-gradient-c;
+    background: $header-bg-gradient-mz;
+    background: $header-bg-gradient-wb;
+    background: $header-bg-gradient-li;
+    filter: $header-filter-grad;
     height: 100vh;
     width: 100%;
     position: fixed;

@@ -40,10 +40,18 @@
             </div>
         </nav>
     </div>
-    <!-- Navbar -->
+    <!-- Navbar desk -->
     <div class="container-fluid text-center header__desk">
       <h1 class="logo d-inline">MemeAlmohadonas?</h1>
-      <img width="400px" height="400px" class="d-inline" src="images/memealmoha.png" alt="logo">
+      <img width="300px" height="300px" class="d-inline" src="images/memealmoha.png" alt="logo">
+      <nav class="navbar navbar-light bg-transparent ">
+        <div class="container-fluid ">
+          <form class="d-flex m-auto">
+            <input class="form-control me-2" type="search" placeholder="Busca tu meme!" aria-label="Search">
+            <button class="btn btn btn-dark"  type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
     </div>
   <nav class="navbar navbar-expand navbar-dark bg-dark text-light nav__desk ">
       <div class="container-fluid ">
@@ -108,7 +116,43 @@
         </div>
     </div>
     <!-- contenido destacado -->
-    <div class="container border-dark text-center">
+    
+    <div class="container mt-3 mb-4 m-auto z-index-20" >
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img height="400" src="images/memes.jpg" class="d-block w-100" alt="nueva merch">
+            <div class="carousel-caption d-md-block ">
+              <h5 class="text__shadow fs-4">Nueva merch!</h5>
+              <p class="text__shadow fs-3">Nuevos memes con la mejor suavidad!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img height="400"src="images/dogevscheems.jpg" class="d-block w-100" alt="dege vs cheems">
+            <div class="carousel-caption d-md-block text-dark">
+              <h5>Proximamente!</h5>
+              <p>Buff Doge VS Cheems</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img height="400"src="images/cd.jpg" class="d-block w-100" alt="CoderHouse">
+            <div class="carousel-caption d-md-block bg-dark">
+              <h5 class="fs-4">Coder House</h5>
+              <p class="fs-3">Sponsor oficial de nuestra page</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container border-dark text-center mt-2">
       <div class="card-body text-dark">
         <img class="rounded" width="200px" height="200px" src="https://www.brcline.com/wp-content/uploads/2016/01/bootstrap-logo.png" alt="bootstrap">
         <h5 class="card-title">Ahora con Bootstrap!</h5>
@@ -117,6 +161,7 @@
     </div>
     <div class="container">
       <div class="row">
+        <a href="pages/help.html" class="text-decoration-none">
         <div class="col bg-dark text-center text-light m-2 p-3">
           <h4 class="text-danger ">¡¡ALERTA</h4>
           <small>Cuidado con las estafas y supuestos sorteos falsos</small>
@@ -124,7 +169,9 @@
           <small>Avise a nuestros medios de contacto sobnre la situacion</small>
           <small>No entre en enlaces ajenos a nuestra pagina</small>
         </div>
+      </a>
       </div>
+      <a href="pages/contact.html" class="text-decoration-none">
       <div class="card border-dark mb-3 text-center be__part">
         <div class="card-body text-light text__shadow">
           <h5 class=" card-title">Se parte de la comunidad</h5>
@@ -137,40 +184,8 @@
           <p class="card-text">Cualquier sugerencia o mejora son bienvenidas y recompensadas, animate!</p>
         </div>
       </div>
+    </a>
     </div>
-    <div class="container mt-3 mb-3 m-auto z-index-20" >
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/meme.jpg?fit=1200%2C675&ssl=1" class="d-block w-100" alt="nueva merch">
-          <div class="carousel-caption d-md-block ">
-            <h5 class="text__shadow fs-4">Nueva merch!</h5>
-            <p class="text__shadow fs-3">Nuevos memes con la mejor suavidad!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="dege vs cheems">
-          <div class="carousel-caption d-md-block text-dark">
-            <h5>Proximamente!</h5>
-            <p>Buff Doge VS Cheems</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="data:image/png;base64,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" class="d-block w-100" alt="CoderHouse">
-            <h5 class="text-center text-light bg-dark m-0">CoderHouse</h5>
-            <p class="text-center text-light bg-dark m-0">Sponsor oficial de nuestra page :)</p>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
     <footer class="container-fluid bg-dark text-center text-light">
         <div class="row p-5">
             <div class="col "><a href="pages/404.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="grey" class="bi bi-facebook" viewBox="0 0 16 16">

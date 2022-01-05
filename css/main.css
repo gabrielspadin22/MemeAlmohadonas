@@ -5,6 +5,18 @@
   -moz-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.74);
 }
 
+.superbfocus:hover {
+  transition: all 0.5s;
+  z-index: 500;
+  box-shadow: 10px 10px 400px 200px black;
+  -webkit-box-shadow: 10px 10px 400px 200px black;
+  -moz-box-shadow: 10px 10px 400px 200px black;
+}
+
+.bi:hover {
+  fill: white;
+}
+
 .cube__container {
   pointer-events: none;
   z-index: 600;
@@ -206,7 +218,6 @@
 
 .cart__container {
   background-color: #c5c5ff;
-  min-width: 316px;
   font-size: 1em;
 }
 
@@ -325,7 +336,7 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-  .header__desk, .loading {
+  .header__desk {
     display: none;
   }
 
@@ -363,7 +374,7 @@
     display: none;
   }
 
-  .header__desk, .loading {
+  .header__desk {
     background: #ff3fea;
     background: -moz-linear-gradient(90deg, #ff3fea 0%, #f5e264 26%, rgba(102, 255, 66, 0.8015581232) 52%, #8aefff 77%, #534aff 100%);
     background: -webkit-linear-gradient(90deg, #ff3fea 0%, #f5e264 26%, rgba(102, 255, 66, 0.8015581232) 52%, #8aefff 77%, #534aff 100%);
@@ -385,6 +396,11 @@
   justify-content: center;
   pointer-events: none;
   z-index: 800;
+  background: #ff3fea;
+  background: -moz-linear-gradient(90deg, #ff3fea 0%, #f5e264 26%, rgba(102, 255, 66, 0.8015581232) 52%, #8aefff 77%, #534aff 100%);
+  background: -webkit-linear-gradient(90deg, #ff3fea 0%, #f5e264 26%, rgba(102, 255, 66, 0.8015581232) 52%, #8aefff 77%, #534aff 100%);
+  background: linear-gradient(90deg, #ff3fea 0%, #f5e264 26%, rgba(102, 255, 66, 0.8015581232) 52%, #8aefff 77%, #534aff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff3fea",endColorstr="#534aff",GradientType=1);
   height: 100vh;
   width: 100%;
   position: fixed;
